@@ -44,6 +44,7 @@ const {
   Idena,
   Civic,
   CyberConnect,
+  TrustaLabs,
 } = stampPlatforms;
 import { PlatformProps } from "../components/GenericPlatform";
 
@@ -226,6 +227,13 @@ if (process.env.NEXT_PUBLIC_FF_CYBERCONNECT_STAMPS === "on") {
   platforms.set("CyberConnect", {
     platform: new CyberConnect.CyberConnectPlatform(),
     platFormGroupSpec: CyberConnect.ProviderConfig,
+  });
+}
+
+if (process.env.NEXT_PUBLIC_FF_TRUSTALABS_STAMPS === "on") {
+  platforms.set("TrustaLabs", {
+    platform: new TrustaLabs.TrustaLabsPlatform(),
+    platFormGroupSpec: TrustaLabs.ProviderConfig,
   });
 }
 

@@ -24,6 +24,7 @@ import * as Holonym from "./Holonym";
 import * as Idena from "./Idena";
 import * as Civic from "./Civic";
 import * as CyberConnect from "./CyberProfile";
+import * as TrustaLabs from "./TrustaLabs";
 import { PlatformSpec, PlatformGroupSpec, Provider } from "./types";
 
 type PlatformConfig = {
@@ -60,6 +61,7 @@ const platforms: Record<string, PlatformConfig> = {
   Idena,
   Civic,
   CyberConnect,
+  TrustaLabs,
 };
 
 if (process.env.NEXT_PUBLIC_FF_NEW_POAP_STAMPS === "on") {
